@@ -3,17 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	var rows, columns, i, j int
+	var lignes, colonnes, i, j int
 
-	var multimat1 [10][10]int
-	var multimat2 [10][10]int
-	var multiplicationnmat [10][10]int
+	var mat1 [10][10]int
+	var mat2 [10][10]int
+	var matMultiplier [10][10]int
 
-	fmt.Print("Enter the Multiplication Matrix Rows and Columns = ")
-	fmt.Scan(&rows, &columns)
+	fmt.Print("Entrer le nombre de lignes puis celui de colonnes  = ")
+	fmt.Scan(&lignes, &colonnes)
 
 	fmt.Print("Enter the First Matrix Items to Multiplication = ")
-	for i = 0; i < rows; i++ {
+	for i = 0; i < lignes; i++ {
 		for j = 0; j < columns; j++ {
 			fmt.Scan(&multimat1[i][j])
 		}
